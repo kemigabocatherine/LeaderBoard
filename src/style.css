@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comic Neue', cursive;
+  padding: 5% 3%;
+  width: 95%;
+}
+
+#content {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-right: 5px;
+  width: 98%;
+}
+
+#list,
+#add {
+  width: 45%;
+}
+
+#add {
+  margin-left: 6%;
+}
+
+#scores-header {
+  display: flex;
+}
+
+#score-board li {
+  list-style-type: none;
+  font-weight: 550;
+  padding: 3px;
+}
+
+li:nth-child(odd) {
+  background-color: rgba(231, 224, 224, 0.459);
+}
+
+#add form{
+  display: flex;
+  flex-direction: column;
+}
+
+button,
+#score-board ul,
+input {
+  border: 2.5px solid #000;
+}
+
+input {
+  padding: 3px;
+}
+
+#add-name::placeholder,
+#add-score::placeholder,
+#refresh,
+#submit {
+  font-family: 'Comic Neue', cursive;
+  color: black;
+  font-weight: 550;
+}
+
+/* #refresh {
+  margin-left: auto;
+} */
+
+button {
+  box-shadow: rgb(182, 12, 12);
+}
+
+#submit,
+#refresh {
+  width: fit-content;
+  margin-left: auto;
+  background-color: #fff;
+  padding: 2px 3px;
+}
+
+#score-board,
+form {
+  margin-top: 7%;
+}
+
+input#add-score,
+#submit {
+  margin-top: 20px;
+}
