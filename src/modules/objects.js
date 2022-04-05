@@ -1,4 +1,4 @@
-export const boardItems = [
+const boardItems = [
   {
     name: 'Name',
     score: 100,
@@ -28,4 +28,6 @@ export const boardItems = [
     name: 'Name',
     score: 42,
   },
-]
+];
+
+export default boardItems;

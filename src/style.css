@@ -32,17 +32,22 @@ body {
   display: flex;
 }
 
+li:nth-child(odd) {
+  background-color: rgba(231, 224, 224, 0.459);
+}
+
 #score-board li {
   list-style-type: none;
   font-weight: 550;
   padding: 3px;
 }
 
-li:nth-child(odd) {
-  background-color: rgba(231, 224, 224, 0.459);
+#score-board,
+form {
+  margin-top: 7%;
 }
 
-#add form{
+#add form {
   display: flex;
   flex-direction: column;
 }
@@ -66,25 +71,12 @@ input {
   font-weight: 550;
 }
 
-/* #refresh {
-  margin-left: auto;
-} */
-
-button {
-  box-shadow: rgb(182, 12, 12);
-}
-
 #submit,
 #refresh {
   width: fit-content;
   margin-left: auto;
   background-color: #fff;
   padding: 2px 3px;
-}
-
-#score-board,
-form {
-  margin-top: 7%;
 }
 
 input#add-score,
