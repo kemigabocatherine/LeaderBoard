@@ -1,4 +1,4 @@
-import { addScores, getScores } from './objects.js'
+import { addScores, getScores } from './objects.js';
 
 const refresh = document.getElementById('refresh');
 const form = document.getElementById('add-scores');
@@ -36,4 +36,3 @@ refresh.addEventListener('click', () => {
 });
 
 export default display;
-
