@@ -7,25 +7,20 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Comic Neue', cursive;
+  font-size: 20px;
   padding: 5% 3%;
   width: 95%;
+  background-color: #050522;
+  color: #fff;
 }
 
 #content {
   display: flex;
+  flex-direction: column;
   margin-top: 25px;
   margin-left: 30px;
   margin-right: 5px;
   width: 98%;
-}
-
-#list,
-#add {
-  width: 45%;
-}
-
-#add {
-  margin-left: 6%;
 }
 
 #scores-header {
@@ -39,7 +34,7 @@ li:nth-child(odd) {
 #score-board li {
   list-style-type: none;
   font-weight: 550;
-  padding: 3px;
+  padding: 4px;
 }
 
 #score-board,
@@ -58,8 +53,17 @@ input {
   border: 2.5px solid #000;
 }
 
+button#refresh,
+button#submit {
+  width: 80px;
+}
+
+button {
+  box-shadow: 2px 2px;
+}
+
 input {
-  padding: 3px;
+  padding: 4px;
 }
 
 #add-name::placeholder,
@@ -77,9 +81,45 @@ input {
   margin-left: auto;
   background-color: #fff;
   padding: 2px 3px;
+  font-size: 18px;
+}
+
+input#add-name,
+input#add-score {
+  font-size: 16px;
 }
 
 input#add-score,
 #submit {
   margin-top: 20px;
+}
+
+#list,
+#add {
+  width: 95%;
+}
+
+#add {
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: #050522;
+    color: #fff;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #add {
+    margin-left: 6%;
+  }
+
+  #list,
+  #add {
+    width: 45%;
+  }
 }
