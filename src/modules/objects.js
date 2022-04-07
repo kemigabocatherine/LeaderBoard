@@ -19,9 +19,8 @@ const addScores = async () => {
 };
 
 const getScores = async () => { 
-  const res = await fetch(url); 
-  const values = await res.json(); 
-  return values.result; 
+const res = await fetch(url);
+const values = await res.json();
+return values.result;
 };
-
 export { addScores, getScores };
