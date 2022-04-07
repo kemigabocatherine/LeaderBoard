@@ -1,33 +1,26 @@
-const boardItems = [
-  {
-    name: 'Name',
-    score: 100,
-  },
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/OhHe8A7JSbmmogrNC5Jc/scores/';
 
-  {
-    name: 'Name',
-    score: 20,
-  },
+const addScores = async () => {
+  const names = document.querySelector('#add-name');
+  const scores = document.querySelector('#add-score');
 
-  {
-    name: 'Name',
-    score: 50,
-  },
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
+    body: JSON.stringify({
+      user: names.value,
+      score: scores.value,
+    }),
+  });
+  const data = await res.json();
+  return data;
+};
 
-  {
-    name: 'Name',
-    score: 125,
-  },
-
-  {
-    name: 'Name',
-    score: 77,
-  },
-
-  {
-    name: 'Name',
-    score: 42,
-  },
-];
-
-export default boardItems;
+const getScores = async () => {
+  const res = await fetch(url);
+  const values = await res.json();
+  return values.result;
+};
+export { addScores, getScores };

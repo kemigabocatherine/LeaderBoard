@@ -1,6 +1,6 @@
 # LeaderBoard
 
-Leaderboard website displays scores submitted by different players and also allows submission of scores.Built with HTML,CSS, JavaScript, webpack, API.
+Leaderboard website displays scores submitted by different players and also allows submission of scores.Built with HTML,CSS, JavaScript, JS modules, webpack, API.
 
 ## Built With
 
@@ -9,6 +9,7 @@ Leaderboard website displays scores submitted by different players and also allo
 - JS
 - JS modules
 - Webpack
+- API
 
 ## Getting Started
 
