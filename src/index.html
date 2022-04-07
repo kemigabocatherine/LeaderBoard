@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Lato&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Learder Board</title>
+</head>
+<body>
+  <header>
+    <h1 class="heading">
+      Leaderboard
+    </h1>
+  </header>
+  <section id="content">
+    <div id="list">
+      <div id="scores-header">
+        <h2 id="score-heading">
+          Recent scores
+        </h2>
+        <button type="button" id="refresh">Refresh</button>
+      </div>
+      <div id="score-board">
+          <ul id="board-content">
+          </ul>
+      </div>
+    </div>
+
+    <div id="add">
+      <h2 id="submit-heading">
+        Add your score
+      </h2>
+      <form id="add-scores">
+        <input type="text" id="add-name" placeholder="Your name">
+        <input type="text" id="add-score" placeholder="Your score">
+        <button class="adding" type="button" id="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
